@@ -1,0 +1,253 @@
+/*
+author: Danielle Martin
+student no.: 100628392
+created: 28/04/21
+last modified: 28/04/21
+validated: 
+description: provides styles for project
+references:
+section height      - https://dev.to/lennythedev/css-gotcha-how-to-fill-page-with-a-div-270j
+Image               - https://freesvg.org/australia-map-outline-vector-illustration
+                        https://freesvg.org/bottle-bw
+*/
+
+/*PAGE AND SECTION FORMATTING*/ 
+html, body {margin: 0; padding: 0; height: 100%}
+section {margin: 0; padding: 0 25%; display:block;}
+
+body {  
+    background-color: #fafdfc;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: auto;
+    overflow: auto; /*scroll control*/
+    clear: both; /*keep everything above the footer*/
+    margin: 0; 
+    padding: 0; 
+}
+
+.intro {
+    min-height: 100vh;
+    background-color: #7dc2af;
+}
+
+.part1, .references {
+    min-height: 100vh;
+}
+
+footer {
+    background-color: #7dc2af;
+    padding: 10px 0; 
+    clear: both;
+    width: 100%;
+}
+
+/* NAV BAR */
+nav ul {
+    margin: 0;
+    padding: 15px 0;
+}
+
+nav li {
+    display: inline;
+}
+
+/* FONT STYLING */
+nav li a {
+    text-decoration: none;
+    color: #048884;
+    font-weight: 600;
+    font-family: 'Headland One', serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Headland One', serif;
+    margin: 15px;
+    color:#048884; 
+}
+
+h1 {
+    font-size: 3em;     
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;    
+    text-align: left;
+    padding: 20px 0;
+}
+
+.subheader{
+    padding-top: 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1em;    
+    text-align: left;
+}
+
+
+p, footer p, li{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    margin: 0 15px;
+    text-align: left;
+
+}
+
+p, #barChart{
+    font-size: 1.2em;
+    color:rgb(70,70,70);
+    margin: 15px;
+}
+
+.references p, li {
+    font-size: 1em;
+    text-align: left;
+    color:rgb(70, 70, 70);
+}
+
+footer p {
+    font-size: 1em;
+    color: #048884;
+    text-align: left;
+}
+
+figcaption {
+    font-size: .9em;
+    font-style: italic;
+    padding: 2px;
+    color:rgb(70,70,70);
+}
+
+
+/* IMAGES AND FIGURES */
+#barChart .tick line{
+    visibility: visible;
+    stroke: #f3fdfa;
+}
+
+#barChart .grid .domain {
+    visibility: hidden; /* remove top gridline */
+}
+
+#barChart svg {
+    display: block;
+    width: 100%;
+    float: left;
+    padding-bottom: 30px;
+}
+
+#stackedChart .yAxis .tick line{
+    visibility: hidden; /* hide only y axis ticks */
+}
+
+/* intro image */
+#plasticAus {
+    width: 30%;
+    height: auto;
+    padding-top: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    min-width: 80px; 
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none; 
+    border-radius: 5px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    font-size: .7em;
+    cursor: pointer;
+}
+
+#buttons {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-left: 5%; /*bump across to centre to chart*/
+}
+
+#all {
+    background-color: #707070;
+    opacity: 0.7;
+    margin-bottom: 10px;
+
+}
+
+#all:hover {
+    opacity: 1;
+}
+
+#plastics {
+    background-color: #e78ac3;
+    opacity: 0.7;
+    margin-bottom: 2px;
+}
+
+#plastics:hover {
+    opacity: 1;
+}
+
+
+#organic {
+    background-color: #a6d854;
+    opacity: 0.7;
+    margin-bottom: 2px;
+}
+
+#organic:hover {
+    opacity: 1;
+}
+
+
+#masonry {
+    background-color: #7dc2af;
+    opacity: 0.7;
+    margin-bottom: 2px;
+}
+
+#masonry:hover {
+    opacity: 1;
+}
+
+
+#paperCard {
+    background-color: #ffc525;
+    opacity: 0.7;
+    margin-bottom: 2px;
+}
+
+#paperCard:hover {
+    opacity: 1;
+}
+
+#metals {
+    background-color: #988cca;
+    opacity: 0.7;
+    margin-bottom: 2px;
+}
+
+#metals:hover {
+    opacity: 1;
+}
+
+#hazardous {
+    background-color: #fc8d62;
+    opacity: 0.7;
+    margin-bottom: 2px;
+}
+
+#hazardous:hover {
+    opacity: 1;
+}

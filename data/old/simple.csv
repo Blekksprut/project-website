@@ -1,0 +1,6 @@
+type,glass,plastics,organic,paperCardboard,metals,pp,pet,food,branches
+Mining,47,222,55,619,600,65,5,50,125
+Manufacturing,246,1160,1593,3223,3151,123,10,30,200
+Construction,118,605,407,1532,2583,548,25,230,400
+Households,2464,500,9676,6295,3395,600,50,150,365
+Imports,22,39,2834,15,3111,55,100,90,108
